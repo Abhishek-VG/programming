@@ -14,7 +14,7 @@ public class RadixSort {
 
 	private static void sort(int[] arr) {
 		System.out.println(Arrays.toString(arr));
-		int numberOfRuns = getLargestNumber(arr);
+		int numberOfRuns = getLargestNumberDigitLength(arr);
 		for (int i = 0; i < numberOfRuns; i++) {
 			int[] tempCountArray = new int[10];
 			int[] tempFinalArray = new int[arr.length];
@@ -49,7 +49,7 @@ public class RadixSort {
 		}
 	}
 
-	private static int getLargestNumber(int[] arr) {
+	private static int getLargestNumberDigitLength(int[] arr) {
 		int max = arr[0];
 		for (int i = 1; i < arr.length; i++) {
 			if (arr[i] > max) {
