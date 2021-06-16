@@ -33,20 +33,20 @@ public class GCD {
 		Scanner scanner = new Scanner(System.in);
 		int a = scanner.nextInt();
 		int b = scanner.nextInt();
-//		int ansNav;
+		int ansNav;
 		int ansOpt;
-//		long startTime = System.currentTimeMillis();
-//		System.out.println(ansNav = gcd_naive(a, b));
-//		long stopTime = System.currentTimeMillis();
-//		long elapsedTime = stopTime - startTime;
-//		System.out.println("Naive method = " + elapsedTime);
+		long startTime = System.currentTimeMillis();
+		System.out.println(ansNav = gcd_naive(a, b));
+		long stopTime = System.currentTimeMillis();
+		long elapsedTime = stopTime - startTime;
+		System.out.println("Naive method = " + elapsedTime);
 		
-//		startTime = System.currentTimeMillis();
+		startTime = System.currentTimeMillis();
 		System.out.println(ansOpt = gcd_optimized(a, b));
-//		stopTime = System.currentTimeMillis();
-//		elapsedTime = stopTime - startTime;
-//		System.out.println("Optimized method = " + elapsedTime);
-//		System.out.println("Result match = " + (ansNav == ansOpt ? "Passed": "failed") );
+		stopTime = System.currentTimeMillis();
+		elapsedTime = stopTime - startTime;
+		System.out.println("Optimized method = " + elapsedTime);
+		System.out.println("Result match = " + (ansNav == ansOpt ? "Passed": "failed") );
 
 	}
 }
